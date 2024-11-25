@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Heartify</string>
+    <string name="signup">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="message_welcome_page">Berbagai kumpulan story menarik hadir untuk anda!</string>
+    <string name="title_welcome_page">Selamat datang di Story Apps!</string>
+    <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Masukkan dulu datamu ya</string>
+    <string name="title_login_page">Datang dan bersenang-senanglah!</string>
+    <string name="name">Nama</string>
+    <string name="message_main_page">Welcome to Story Apps.</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="logout">Keluar</string>
+    <string name="add">Add</string>
+
+    <string name="namee">Nama</string>
+    <string name="emaill">Email</string>
+    <string name="age">Usia</string>
+    <string name="phone_number">Tekanan Darah</string>
+    <string name="collestrol">Kadar Kolestrol</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="save">Simpan</string>
+    <string name="desk">Keluhan</string>
+    <string name="desks">Keluhan kamu...</string>
+    <string name="jk">Jenis Kelamin</string>
+    <string name="l">Laki-Laki</string>
+    <string name="p">Perempuan</string>
+    <string name="love_manchester_united">Apakah kamu memiliki riwayat penyakit jantung?</string>
+    <string name="change">Ubah</string>
+    <string name="dummy_name">Nama kamu....</string>
+    <string name="dummy_email">Email Kamu...</string>
+    <string name="dummynumber">0.0</string>
+    <string name="dummyage">Usia Kamu...</string>
+    <string name="dummyislove">Jantung</string>
+</resources>
