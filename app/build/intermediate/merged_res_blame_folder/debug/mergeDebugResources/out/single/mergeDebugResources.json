@@ -1,0 +1,118 @@
+[
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\layout_activity_welcome.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\drawable_ic_baseline_lock_24.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\drawable\\ic_baseline_lock_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\drawable_ic_capture.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\drawable\\ic_capture.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\layout_activity_form_user_preference.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\layout\\activity_form_user_preference.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\drawable_ic_place_holder.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\drawable\\ic_place_holder.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\drawable\\ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "com.example.heartify.loginwithanimation.app-debug-44:/layout_activity_form_user_preference.xml.flat",
+        "source": "com.example.heartify.loginwithanimation.app-main-46:/layout/activity_form_user_preference.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\drawable_ic_baseline_email_24.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\drawable\\ic_baseline_email_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\drawable_jantung.png.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\drawable\\jantung.png"
+    },
+    {
+        "merged": "com.example.heartify.loginwithanimation.app-debug-44:/layout_activity_main.xml.flat",
+        "source": "com.example.heartify.loginwithanimation.app-main-46:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-debug-44:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Nadifa Isma Aulia\\.gradle\\daemon\\8.9\\com.example.heartify.loginwithanimation.app-main-46:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    }
+]
