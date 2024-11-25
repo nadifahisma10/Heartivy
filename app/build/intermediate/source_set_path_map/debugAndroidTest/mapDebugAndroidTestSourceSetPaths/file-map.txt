@@ -1,0 +1,5 @@
+com.example.heartify.loginwithanimation.test.app-jetified-core-1.6.1-0 C:\Users\Nadifa Isma Aulia\.gradle\caches\8.9\transforms\501bf77ff55623103bdfbdd6e9359552\transformed\jetified-core-1.6.1\res
+com.example.heartify.loginwithanimation.test.app-androidTest-1 D:\Heartify\app\build\generated\res\resValues\androidTest\debug
+com.example.heartify.loginwithanimation.test.app-mergeDebugAndroidTestResources-2 D:\Heartify\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.heartify.loginwithanimation.test.app-mergeDebugAndroidTestResources-3 D:\Heartify\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.heartify.loginwithanimation.test.app-debugAndroidTest-4 D:\Heartify\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
