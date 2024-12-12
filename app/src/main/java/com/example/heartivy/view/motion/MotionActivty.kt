@@ -10,7 +10,7 @@ import android.widget.Button
 import com.example.heartify.loginwithanimation.R
 import com.example.heartify.view.main.MainActivity
 
-class MotionActivity : AppCompatActivity() {
+class MotionActivty : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +22,7 @@ class MotionActivity : AppCompatActivity() {
         val buttonIntent = findViewById<Button>(R.id.button_intent)
         buttonIntent.setOnClickListener {
             // Berpindah ke MainActivity
-            val intent = Intent(this@MotionActivity, MainActivity::class.java)
+            val intent = Intent(this@MotionActivty, MainActivity::class.java)
             startActivity(intent)
             finish() // Mengakhiri aktivitas ini
         }
