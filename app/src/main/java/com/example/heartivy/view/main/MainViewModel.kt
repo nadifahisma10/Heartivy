@@ -11,12 +11,16 @@ import kotlinx.coroutines.launch
 
 class MainViewModel(private val repository: UserRepository) : ViewModel() {
 
-
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> get() = _isLoading
 
     private val _errorMessage = MutableLiveData<String?>()
     val errorMessage: LiveData<String?> get() = _errorMessage
+
+    // Fungsi untuk mengatur status loading
+    fun setLoading(isLoading: Boolean) {
+        _isLoading.value = isLoading
+    }
 
     // Get session user
     fun getSession(): LiveData<UserModel> {
