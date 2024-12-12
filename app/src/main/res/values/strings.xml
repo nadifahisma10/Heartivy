@@ -2,37 +2,101 @@
     <string name="app_name">Heartify</string>
     <string name="signup">Daftar</string>
     <string name="login">Masuk</string>
-    <string name="message_welcome_page">Berbagai kumpulan story menarik hadir untuk anda!</string>
-    <string name="title_welcome_page">Selamat datang di Story Apps!</string>
+    <string name="message_welcome_page">Cek kesehatan jantung anda dari sekarang dan jangan sampai terlambat!</string>
+    <string name="title_welcome_page">Selamat datang di laman Heartivy!</string>
     <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="message_login_page">Masukkan dulu datamu ya</string>
-    <string name="title_login_page">Datang dan bersenang-senanglah!</string>
+    <string name="title_login_page">Selamat datang!</string>
     <string name="name">Nama</string>
-    <string name="message_main_page">Welcome to Story Apps.</string>
+    <string name="message_main_page">Welcome to Heartivy</string>
     <string name="greeting">Halo %1$s,</string>
     <string name="logout">Keluar</string>
     <string name="add">Add</string>
 
+    <string name="title_menu_1">Kenali Kesehatan Jantung Anda</string>
+    <string name="title_menu_2">Kenali Juga Cara Hidup Sehat Ala Kami</string>
+    <string name="title_menu_3">Ajak Keluarga Anda Untuk Bergabung</string>
+    <string name="title_menu_4">Hidup Sehat, Semua Jadi Senang</string>
+    <string name="desc_menu_1">Selamat Datang di Laman Aplikasi Heartivy. Anda dapat mengecek kesehatan jantung anda disini</string>
+    <string name="desc_menu_2">Di aplikasi ini, kita menyarankan beberapa saran agar anda dapat menerapkan hidup sehat</string>
+    <string name="desc_menu_3">Anda dapat mengajak keluarga anda untuk melakukan pengecekan kesehatan jantung</string>
+    <string name="desc_menu_4">Klik tombol dibawah ini dan cek kesehatan jantung anda sekarang</string>
+    <string name="learn_now">Masuk</string>
+
     <string name="namee">Nama</string>
     <string name="emaill">Email</string>
     <string name="age">Usia</string>
-    <string name="phone_number">Tekanan Darah</string>
-    <string name="collestrol">Kadar Kolestrol</string>
-    <string name="yes">Ya</string>
-    <string name="no">Tidak</string>
+    <string name="phone_number">Nomor Telepon</string>
+    <string name="yes">Pasien</string>
+    <string name="no">Dokter</string>
     <string name="save">Simpan</string>
-    <string name="desk">Keluhan</string>
-    <string name="desks">Keluhan kamu...</string>
-    <string name="jk">Jenis Kelamin</string>
-    <string name="l">Laki-Laki</string>
-    <string name="p">Perempuan</string>
-    <string name="love_manchester_united">Apakah kamu memiliki riwayat penyakit jantung?</string>
+    <string name="result">Hasil</string>
+    <string name="love_manchester_united">Apa status penggunaan aplikasi kamu saat ini?</string>
     <string name="change">Ubah</string>
     <string name="dummy_name">Nama kamu....</string>
     <string name="dummy_email">Email Kamu...</string>
     <string name="dummynumber">0.0</string>
     <string name="dummyage">Usia Kamu...</string>
     <string name="dummyislove">Jantung</string>
+    <string name="todo">TODO</string>
+    <string name="about">Setelan</string>
+    <string name="dokter">Cara Menjaga Kesehatan Tubuh Secara Umum</string>
+    <string name="quote">"Dokter tidak akan membuatmu sehat. Ahli gizi tidak akan membuatmu langsing. Guru tidak akan membuatmu pintar. Pakar tidak akan membuatmu
+        tenang. Mentor tidak akan membuatmu kaya. Pelatih tidak akan membuatmu bugar. Pada akhirnya, kamu harus bertanggung jawab. Selamatkan dirimu sendiri.
+        \n~ Naval Ravikant"</string>
+    <string name="rokok">Tidak Merokok</string>
+    <string name="sport">Olahraga Secara Rutin</string>
+    <string name="buah">Perbanyak Makan Berserat dan Ber-Omega 3</string>
+    <string name="darah"><![CDATA[Menjaga Tekanan & Kadar Gula Darah]]></string>
+    <string name="tidur">Istirahat yang Cukup</string>
+    <string name="results">Kondisi Jantungmu:</string>
+    <string name="good">GOOD</string>
+    <string name="coba">Coba Sekarang!</string>
+
+    <string name="quiz">Kita mulai kuisnya yuk!!!</string>
+    <string name="pertanyaan1">Berapa usia kamu sekarang?</string>
+    <string name="pertanyaan2">Berapa tekanan darahmu sekarang?</string>
+    <string name="pertanyaan3">Berapa kadar kolestrolmu saat ini?</string>
+    <string name="pertanyaan4">Apakah anda memiliki penyakit jantung?</string>
+    <string name="pertanyaan5">Apakah saat ini anda memiliki keluhan terkait jantung anda?</string>
+    <string name="predict">Selesai</string>
+    <string name="tflite_is_not_initialized_yet">TfLite is not initialized yet</string>
+    <string name="no_tflite_interpreter_loaded">No TFLite interpreter loaded</string>
+    <string name="firebaseml_model_download_failed">Model download failed, please check your connection.</string>
+
+    <string name="by">Oleh: Heartivy Community</string>
+    <string name="judul">Kenali Kesehatan Jantung Anda dari Sekarang Yuk!!!</string>
+    <string name="penutup">Semoga Membantu!</string>
+    <string name="isi">Kesehatan adalah kondisi kesejahteraan fisik, mental, dan sosial yang optimal, bukan hanya sekadar bebas dari penyakit atau kelemahan.
+        Menjaga kesehatan sangat penting untuk mendukung aktivitas sehari-hari dan meningkatkan kualitas hidup. Kesehatan yang baik dicapai melalui kombinasi
+        pola makan yang seimbang, aktivitas fisik yang cukup, tidur yang berkualitas, serta manajemen stres yang efektif.\n \nCara Menjaga Kesehatan Secara Umum
+        antara lain seperti: \n1. Pola Makan Sehat: Konsumsi makanan bergizi seimbang yang kaya akan sayuran, buah-buahan, protein tanpa lemak, serta lemak sehat.
+        \n2. Olahraga Teratur: Lakukan aktivitas fisik minimal 150 menit per minggu, seperti berjalan kaki, jogging, atau berenang. \n3. Tidur Cukup: Tidur selama
+        7-9 jam setiap malam penting untuk regenerasi tubuh dan kesehatan mental. \n4. Hindari Kebiasaan Buruk: Kurangi konsumsi alkohol, hindari merokok, dan
+        jauhi penggunaan obat-obatan terlarang. \n5. Manajemen Stres: Praktikkan teknik relaksasi seperti meditasi, yoga, atau pernapasan dalam untuk mengurangi
+        kecepatan dan intensitas stres.\n \nKesehatan jantung adalah salah satu aspek penting dalam menjaga kesehatan secara umum. Jantung berfungsi memompa darah
+        ke seluruh tubuh, membawa oksigen dan nutrisi yang dibutuhkan untuk kelangsungan hidup. \n \nFaktor risiko penyakit jantung yaitu gaya hidup tidak
+        sehat (Pola makan tinggi lemak jenuh, gula, dan garam dapat meningkatkan risiko penyakit jantung), kurangnya aktivitas fisik (tidak aktif secara fisik dapat
+        menyebabkan obesitas, hipertensi, dan kolesterol tinggi), kebiasaan buruk seperti merokok dan konsumsi alkohol berlebihan dapat merusak pembuluh darah dan
+        meningkatkan risiko penyakit jantung. Adapun faktor Genetik, seperti riwayat keluarga dengan penyakit jantung meningkatkan risiko individu dan stres Berlebihan
+        (Stres yang tidak terkelola dapat memengaruhi kesehatan jantung).\n \nTanda dan Gejala Penyakit Jantung antara lain yaitu adanya nyeri dada atau dada terasa
+        tertekan, sesak napas, denyut jantung tidak teratur, pusing atau pingsan dan pembengkakan di kaki atau pergelangan kaki.\n \nPenyakit jantung adalah kondisi
+        yang memengaruhi fungsi dan struktur jantung. Beberapa jenis penyakit jantung yang umum meliputi:\n1. Penyakit Jantung Koroner: Terjadi akibat penyumbatan
+        pembuluh darah koroner oleh plak kolesterol, yang mengurangi aliran darah ke jantung. \n2.Gagal Jantung: Kondisi ketika jantung tidak mampu memompa darah
+        dengan efektif. \n3. Aritmia: Gangguan irama jantung, seperti detak jantung terlalu cepat, terlalu lambat, atau tidak teratur, dan \n \n4. Penyakit Katup Jantung:
+        Kerusakan atau gangguan pada katup jantung yang mengatur aliran darah.\n \nUpaya Mengatasi Penyakit Jantung antara lain yaitu \n1. Perubahan Gaya Hidup.
+        \nContohnya seperti pola makan sehat seperti makanan rendah lemak jenuh, garam, dan gula. Perbanyak makanan kaya serat seperti gandum utuh, sayuran, dan buah-buahan.
+        Selain itu, kita juga harus rajin berolahraga seperti jalan kaki, bersepeda, atau berenang secara teratur. Satu lagi, kita juga tidak boleh merokok. Dan jika
+        sudah terlanjur merokok, sebaiknya berhentilah merokok dari sekarang karena merokok dapat memperburuk kesehatan jantung dan pembuluh darah. \n2. Pemeriksaan
+        Kesehatan Rutin \nLakukan pemeriksaan tekanan darah, kadar kolesterol, dan gula darah secara berkala untuk mendeteksi risiko sejak dini. \n3. Pengobatan Medis
+        \nDisini dokter dapat meresepkan obat seperti statin, pengencer darah, atau obat antihipertensi untuk mengelola kondisi jantung. Dan dokter juga memberi prosedur
+        medis yang mana pada kasus tertentu, prosedur seperti pemasangan stent, bypass, atau operasi katup jantung mungkin diperlukan. \n4. Manajemen Stres \nPraktikkan
+        meditasi, yoga, atau teknik pernapasan untuk mengurangi tekanan mental yang dapat memengaruhi kesehatan jantung. \n5. Edukasi dan Dukungan Komunitas \nBergabung
+        dengan komunitas kesehatan atau kelompok pendukung untuk mendapatkan informasi dan motivasi dalam menjaga kesehatan jantung. \n\nMenjaga kesehatan secara umum dan
+        kesehatan jantung khususnya memerlukan perhatian pada gaya hidup, pola makan, dan aktivitas fisik. Penyakit jantung dapatdicegah dengan perubahan gaya
+        hidup sehat dan pemeriksaan kesehatan rutin. Jika Anda memiliki faktor risiko atau gejala penyakit jantung, segera konsultasikandengan dokter untuk penanganan
+        lebih lanjut.</string>
+    <string name="info">Informasi</string>
 </resources>
