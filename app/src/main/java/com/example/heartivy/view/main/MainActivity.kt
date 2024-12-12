@@ -1,104 +1,158 @@
 package com.example.heartify.view.main
 
-import android.os.Bundle
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.content.Intent
+import android.os.Build
+import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
-import androidx.activity.result.ActivityResult
-import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
+import android.view.WindowInsets
+import android.view.WindowManager
+import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.example.heartify.data.UserHomeModel
-import com.example.heartify.data.UserHomePreference
 import com.example.heartify.loginwithanimation.databinding.ActivityMainBinding
+import com.example.heartify.loginwithanimation.R
+import com.example.heartify.view.checking.CheckingActivity
+import com.example.heartify.view.checking.FormUserHomePreferenceActivity
+import com.example.heartify.view.predict.InfoActivity
+import com.example.heartify.view.predict.PredictionActivity
+import com.example.heartify.view.welcome.WelcomeActivity
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
-
-    private lateinit var mUserHomePreference: UserHomePreference
-    private lateinit var binding: ActivityMainBinding
-
-    private var isPreferenceEmpty = false
-    private lateinit var userHomeModel: UserHomeModel
-
-    private val resultLauncher = registerForActivityResult(
-        StartActivityForResult()
-    ) { result: ActivityResult ->
-        if (result.data != null && result.resultCode == FormUserHomePreferenceActivity.RESULT_CODE) {
-            userHomeModel = result.data?.getParcelableExtra<UserHomeModel>(FormUserHomePreferenceActivity.EXTRA_RESULT) as UserHomeModel
-            populateView(userHomeModel)
-            checkForm(userHomeModel)
-        }
+class MainActivity : AppCompatActivity() {
+    private val viewModel by viewModels<MainViewModel> {
+        ViewModelFactory.getInstance(this)
     }
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.title = "My User Preference"
+        setupView()
+        setupToolbar()
+        setupAction()
+        playAnimation()
 
-        mUserHomePreference = UserHomePreference(this)
-
-        showExistingPreference()
-
-        binding.btnSave.setOnClickListener(this)
-
-    }
-
-    private fun showExistingPreference() {
-        userHomeModel = mUserHomePreference.getUser()
-        populateView(userHomeModel)
-        checkForm(userHomeModel)
-    }
-
-    private fun populateView(userHomeModel: UserHomeModel) {
-        binding.tvName.text =
-            if (userHomeModel.name.toString().isEmpty()) "Tidak Ada" else userHomeModel.name
-        binding.tvEmail.text =
-            if (userHomeModel.email.toString().isEmpty()) "Tidak Ada" else userHomeModel.email
-        binding.tvAge.text =
-            if (userHomeModel.age.toString().isEmpty()) "Tidak Ada" else userHomeModel.age.toString()
-        binding.tvJk.text = if (userHomeModel.jk) "Ya" else "Tidak"
-        binding.tvDesk.text =
-            if (userHomeModel.desk.toString().isEmpty()) "Tidak Ada" else userHomeModel.desk
-        binding.tvPhone.text =
-            if (userHomeModel.phoneNumber.toString().isEmpty()) "Tidak Ada" else userHomeModel.phoneNumber.toString()
-        binding.tvCollestrol.text =
-            if (userHomeModel.collestrol.toString().isEmpty()) "Tidak Ada" else userHomeModel.collestrol.toString()
-        binding.tvIsLoveMu.text = if (userHomeModel.isLove) "Ya" else "Tidak"
-    }
-
-    private fun checkForm(userHomeModel: UserHomeModel) {
-        when {
-            userHomeModel.name.toString().isNotEmpty() -> {
-                binding.btnSave.text = getString(R.string.change)
-                isPreferenceEmpty = false
+        viewModel.getSession().observe(this) { user ->
+            if (!user.isLogin) {
+                startActivity(Intent(this, WelcomeActivity::class.java))
+                finish()
             }
-            else -> {
-                binding.btnSave.text = getString(R.string.save)
-                isPreferenceEmpty = true
+        }
+
+        // Observe loading state
+        viewModel.isLoading.observe(this) { isLoading ->
+            binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
+        }
+
+        // Observe error message
+        viewModel.errorMessage.observe(this) { message ->
+            message?.let {
+                Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
             }
         }
     }
 
-    override fun onClick(view: View) {
-        if (view.id == R.id.btn_save) {
-            val intent = Intent(this@MainActivity, FormUserHomePreferenceActivity::class.java)
-            when {
-                isPreferenceEmpty -> {
-                    intent.putExtra(
-                        FormUserHomePreferenceActivity.EXTRA_TYPE_FORM,
-                        FormUserHomePreferenceActivity.TYPE_ADD
-                    )
-                    intent.putExtra("USER", userHomeModel)
-                }
-                else -> {
-                    intent.putExtra(
-                        FormUserHomePreferenceActivity.EXTRA_TYPE_FORM,
-                        FormUserHomePreferenceActivity.TYPE_EDIT
-                    )
-                    intent.putExtra("USER", userHomeModel)
-                }
-            }
-            resultLauncher.launch(intent)
+    private fun setupView() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            window.insetsController?.hide(WindowInsets.Type.statusBars())
+        } else {
+            @Suppress("DEPRECATION")
+            window.setFlags(
+                WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN
+            )
         }
+        supportActionBar?.hide()
+    }
+
+    private fun setupToolbar() {
+        setSupportActionBar(binding.toolbar)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu) // Inflate menu dari main_menu.xml
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_settings -> {
+                // Kirim Intent ke CheckingActivity dengan data tambahan
+                val intent = Intent(this, CheckingActivity::class.java)
+                intent.putExtra("EXTRA_DATA", "Data dari MainActivity")
+                startActivity(intent)
+                return true
+            }
+            R.id.action_info -> {
+                // Kirim Intent ke CheckingActivity dengan data tambahan
+                val intent = Intent(this, InfoActivity::class.java)
+                intent.putExtra("EXTRA_DATA", "Data dari MainActivity")
+                startActivity(intent)
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun setupAction() {
+        binding.imageDoctor1.setOnClickListener {
+            Toast.makeText(this, "Doctor 1 clicked", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.imageDoctor2.setOnClickListener {
+            Toast.makeText(this, "Doctor 2 clicked", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.imageDoctor3.setOnClickListener {
+            Toast.makeText(this, "Doctor 3 clicked", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.logoutButton.setOnClickListener {
+            viewModel.logout()
+            val intent = Intent(this, WelcomeActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+        }
+
+        binding.fabAddChecking.setOnClickListener {
+            val intent = Intent(this, PredictionActivity::class.java).apply {}
+            startActivity(intent)
+        }
+    }
+
+    private fun playAnimation() {
+        ObjectAnimator.ofFloat(binding.imageView, View.TRANSLATION_X, -30f, 30f).apply {
+            duration = 6000
+            repeatCount = ObjectAnimator.INFINITE
+            repeatMode = ObjectAnimator.REVERSE
+        }.start()
+
+        val dokter = ObjectAnimator.ofFloat(binding.dokter, View.ALPHA, 1f).setDuration(100)
+        val quote = ObjectAnimator.ofFloat(binding.Text1, View.ALPHA, 1f).setDuration(100)
+
+        val image1 = ObjectAnimator.ofFloat(binding.imageDoctor1, View.ALPHA, 1f).setDuration(100)
+        val name1 = ObjectAnimator.ofFloat(binding.nameText1, View.ALPHA, 1f).setDuration(100)
+
+        val image2 = ObjectAnimator.ofFloat(binding.imageDoctor2, View.ALPHA, 1f).setDuration(100)
+        val name2 = ObjectAnimator.ofFloat(binding.nameText2, View.ALPHA, 1f).setDuration(100)
+
+        val image3 = ObjectAnimator.ofFloat(binding.imageDoctor3, View.ALPHA, 1f).setDuration(100)
+        val name3 = ObjectAnimator.ofFloat(binding.nameText3, View.ALPHA, 1f).setDuration(100)
+
+        val name = ObjectAnimator.ofFloat(binding.nameTextView, View.ALPHA, 1f).setDuration(100)
+        val message = ObjectAnimator.ofFloat(binding.messageTextView, View.ALPHA, 1f).setDuration(100)
+        val logout = ObjectAnimator.ofFloat(binding.logoutButton, View.ALPHA, 1f).setDuration(100)
+
+        AnimatorSet().apply {
+            playSequentially(name, message, logout, dokter, quote, image1, name1, image2, name2, image3, name3)
+            startDelay = 100
+        }.start()
+
+
     }
 }
