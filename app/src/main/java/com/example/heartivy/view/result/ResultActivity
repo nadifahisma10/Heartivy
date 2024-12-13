@@ -1,8 +1,8 @@
 package com.example.heartify.view.result
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.heartify.data.UserHomeModel
 import com.example.heartify.loginwithanimation.R
 
 class ResultActivity : AppCompatActivity() {
@@ -11,6 +11,20 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        val userHomeModel = intent.getParcelableExtra<UserHomeModel>("USER")
+        val answers = intent.getStringArrayListExtra("ANSWERS") ?: listOf()
+        val resultTextView: TextView = findViewById(R.id.bmi)
+
+        // Contoh evaluasi hasil berdasarkan jawaban pengguna
+        val resultMessage = evaluateHeartHealth(answers)
+        resultTextView.text = resultMessage
+    }
+
+    private fun evaluateHeartHealth(answers: List<String>): String {
+        // Tambahkan logika untuk mengevaluasi hasil berdasarkan TensorFlow
+        return if (answers.isNotEmpty()) {
+            "Berdasarkan jawaban Anda, tingkat kesehatan jantung Anda memerlukan perhatian."
+        } else {
+            "Data tidak tersedia untuk evaluasi."
+        }
     }
 }
