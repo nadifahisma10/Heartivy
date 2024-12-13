@@ -1,0 +1,16 @@
+package com.example.heartify.model
+
+data class PredictionRequest(
+    val bmi: Int,
+    val sex: String,
+    val smoking: Boolean,
+    val alcohol: Int,
+    val fruit: Int,
+    val vegetables: Int,
+    val potato: Int
+)
+
+data class PredictionResponse(
+    val healthStatus: String,
+    val prediction: String
+)
