@@ -16,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.heartify.loginwithanimation.databinding.ActivityMainBinding
 import com.example.heartify.loginwithanimation.R
 import com.example.heartify.view.checking.CheckingActivity
-import com.example.heartify.view.checking.FormUserHomePreferenceActivity
 import com.example.heartify.view.predict.InfoActivity
 import com.example.heartify.view.predict.PredictionActivity
 import com.example.heartify.view.welcome.WelcomeActivity
