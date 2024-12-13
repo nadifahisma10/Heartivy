@@ -21,7 +21,7 @@ class FormUserHomePreferenceActivity : AppCompatActivity(), View.OnClickListener
     companion object {
         const val EXTRA_TYPE_FORM = "extra_type_form"
         const val EXTRA_RESULT = "extra_result"
-        const val RESULT_CODE = 101
+        const val RESULT_OK = 101
 
         const val TYPE_ADD = 1
         const val TYPE_EDIT = 2
@@ -39,10 +39,12 @@ class FormUserHomePreferenceActivity : AppCompatActivity(), View.OnClickListener
         binding = ActivityFormUserPreferenceBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Inisialisasi tombol simpan
         binding.btnSave.setOnClickListener(this)
 
+        // Ambil data intent
         val receivedIntent = intent
-        userHomeModel = receivedIntent.getParcelableExtra<UserHomeModel>("USER") ?: UserHomeModel()
+        userHomeModel = receivedIntent.getParcelableExtra("USER") ?: UserHomeModel()
         val formType = receivedIntent.getIntExtra(EXTRA_TYPE_FORM, 0)
 
         println("Received User Data: $userHomeModel")
@@ -51,6 +53,7 @@ class FormUserHomePreferenceActivity : AppCompatActivity(), View.OnClickListener
         var actionBarTitle = ""
         var btnTitle = ""
 
+        // Atur tipe form berdasarkan intent
         when (formType) {
             TYPE_ADD -> {
                 actionBarTitle = "Tambah Baru"
@@ -59,21 +62,22 @@ class FormUserHomePreferenceActivity : AppCompatActivity(), View.OnClickListener
             TYPE_EDIT -> {
                 actionBarTitle = "Ubah"
                 btnTitle = "Update"
-                showPreferenceInForm()
+                showPreferenceInForm() // Tampilkan data pada form
             }
         }
 
+        // Atur title dan tombol
         supportActionBar?.title = actionBarTitle
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
         binding.btnSave.text = btnTitle
     }
 
+    // Tampilkan data yang sudah ada di form
     private fun showPreferenceInForm() {
         binding.edtName.setText(userHomeModel.name)
         binding.edtEmail.setText(userHomeModel.email)
-        binding.edtAge.setText(userHomeModel.age)
-        binding.edtPhone.setText(userHomeModel.phoneNumber)
+        binding.edtAge.setText(userHomeModel.age.toString())
+        binding.edtPhone.setText(userHomeModel.phoneNumber.toString())
         if (userHomeModel.isLove) {
             binding.rbYes.isChecked = true
         } else {
@@ -89,43 +93,42 @@ class FormUserHomePreferenceActivity : AppCompatActivity(), View.OnClickListener
             val phoneNo = binding.edtPhone.text.toString().trim()
             val isLoveMU = binding.rgLoveMu.checkedRadioButtonId == R.id.rb_yes
 
+            // Validasi input
             if (name.isEmpty()) {
                 binding.edtName.error = FIELD_REQUIRED
                 return
             }
-
             if (email.isEmpty()) {
                 binding.edtEmail.error = FIELD_REQUIRED
                 return
             }
-
             if (!isValidEmail(email)) {
                 binding.edtEmail.error = FIELD_IS_NOT_VALID
                 return
             }
-
             if (age.isEmpty()) {
                 binding.edtAge.error = FIELD_REQUIRED
                 return
             }
-
             if (phoneNo.isEmpty()) {
                 binding.edtPhone.error = FIELD_REQUIRED
                 return
             }
-
             if (!TextUtils.isDigitsOnly(phoneNo)) {
                 binding.edtPhone.error = FIELD_DIGIT_ONLY
                 return
             }
 
+            // Simpan data pengguna
             saveUser(name, email, age, phoneNo, isLoveMU)
 
+            // Kirim hasil kembali ke CheckingActivity
             val resultIntent = Intent()
             resultIntent.putExtra(EXTRA_RESULT, userHomeModel)
-            setResult(RESULT_CODE, resultIntent)
+            setResult(RESULT_OK, resultIntent)
+            println("Sending Update Result: $userHomeModel")
 
-            finish()
+            finish() // Tutup activity
         }
     }
 
