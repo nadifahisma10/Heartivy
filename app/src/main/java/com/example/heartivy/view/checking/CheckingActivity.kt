@@ -22,10 +22,15 @@ class CheckingActivity : AppCompatActivity(), View.OnClickListener {
     private val resultLauncher = registerForActivityResult(
         StartActivityForResult()
     ) { result: ActivityResult ->
-        if (result.data != null && result.resultCode == FormUserHomePreferenceActivity.RESULT_CODE) {
-            userHomeModel = result.data?.getParcelableExtra<UserHomeModel>(FormUserHomePreferenceActivity.EXTRA_RESULT) as UserHomeModel
-            populateView(userHomeModel)
-            checkForm(userHomeModel)
+        if (result.data != null && result.resultCode == FormUserHomePreferenceActivity.RESULT_OK) { // Gunakan RESULT_OK
+            val updatedUser = result.data?.getParcelableExtra<UserHomeModel>(FormUserHomePreferenceActivity.EXTRA_RESULT)
+            if (updatedUser != null) {
+                // Update data di tampilan
+                userHomeModel = updatedUser // Simpan data terbaru
+                populateView(userHomeModel) // Tampilkan data baru
+                checkForm(userHomeModel) // Periksa apakah tombol harus diubah
+                println("Updated User Data: $userHomeModel") // Log untuk debugging
+            }
         }
     }
 
@@ -58,7 +63,7 @@ class CheckingActivity : AppCompatActivity(), View.OnClickListener {
             if (userHomeModel.age.toString().isEmpty()) "Tidak Ada" else userHomeModel.age.toString()
         binding.tvPhone.text =
             if (userHomeModel.phoneNumber.toString().isEmpty()) "Tidak Ada" else userHomeModel.phoneNumber.toString()
-        binding.tvIsLoveMu.text = if (userHomeModel.isLove) "Ya" else "Tidak"
+        binding.tvIsLoveMu.text = if (userHomeModel.isLove) "Pasien" else "Dokter"
     }
 
     private fun checkForm(userHomeModel: UserHomeModel) {
