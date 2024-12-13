@@ -57,11 +57,15 @@
     <string name="coba">Coba Sekarang!</string>
 
     <string name="quiz">Kita mulai kuisnya yuk!!!</string>
-    <string name="pertanyaan1">Berapa usia kamu sekarang?</string>
-    <string name="pertanyaan2">Berapa tekanan darahmu sekarang?</string>
-    <string name="pertanyaan3">Berapa kadar kolestrolmu saat ini?</string>
-    <string name="pertanyaan4">Apakah anda memiliki penyakit jantung?</string>
-    <string name="pertanyaan5">Apakah saat ini anda memiliki keluhan terkait jantung anda?</string>
+    <string name="exercise">Apakah Anda rutin berolahraga?</string>
+    <string name="heart_disease">Apakah Anda memiliki riwayat penyakit jantung?</string>
+    <string name="sex">Apa jenis kelamin Anda?</string>
+    <string name="bmi">Berapa nilai Indeks Massa Tubuh (BMI) Anda?</string>
+    <string name="smoking">Apakah Anda memiliki riwayat merokok?</string>
+    <string name="alcohol">Berapa rata-rata konsumsi alkohol Anda per minggu?</string>
+    <string name="fruit">Berapa porsi buah yang Anda konsumsi setiap hari?</string>
+    <string name="vegetables">Berapa porsi sayuran hijau yang Anda konsumsi setiap hari?</string>
+    <string name="fried_potato">Berapa porsi kentang goreng yang Anda konsumsi setiap minggu?</string>
     <string name="predict">Selesai</string>
     <string name="tflite_is_not_initialized_yet">TfLite is not initialized yet</string>
     <string name="no_tflite_interpreter_loaded">No TFLite interpreter loaded</string>
@@ -100,4 +104,19 @@
         hidup sehat dan pemeriksaan kesehatan rutin. Jika Anda memiliki faktor risiko atau gejala penyakit jantung, segera konsultasikandengan dokter untuk penanganan
         lebih lanjut.</string>
     <string name="info">Informasi</string>
+    <string name="cover">Hasil Kuis Kesehatan Jantung Anda</string>
+    <string name="eval">Evaluasi kesehatan Anda akan ditampilkan di sini.</string>
+    <string name="input">Masukkan jawaban</string>
+    <string name="jawab">Jawab</string>
+    <string name="olahraga">Sport</string>
+    <string name="yes1">Yes\n</string>
+    <string name="no1">No</string>
+    <string name="jk">Jenis Kelamin</string>
+    <string name="bmi1">BMI</string>
+    <string name="alcohol1">Alkohol</string>
+    <string name="fruit1">Buah-buahan</string>
+    <string name="vegetables1">Sayuran</string>
+    <string name="potato1">Potato</string>
+    <string name="lk">Laki-laki</string>
+    <string name="pr">Perempuan</string>
 </resources>
